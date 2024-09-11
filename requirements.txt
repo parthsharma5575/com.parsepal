@@ -1,3 +1,5 @@
 Flask==2.3.3
 pdfkit==1.0.0
 selenium==4.11.0
+pip install gunicorn
+pip freeze > requirements.txt
