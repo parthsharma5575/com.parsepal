@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParsePal - Download</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>ParsePal - Download</h1>
+    </header>
+    <main>
+        <h2>Your PDFs are ready:</h2>
+        <ul>
+            {% for pdf in pdf_paths %}
+                <li><a href="{{ url_for('download', filename=pdf.split('/')[-1]) }}" download>{{ pdf.split('/')[-1] }}</a></li>
+            {% endfor %}
+        </ul>
+        <a href="/">Go Back</a>
+    </main>
+</body>
+</html>

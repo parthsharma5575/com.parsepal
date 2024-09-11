@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParsePal - Select Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='platform.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="platform">
+            <p class="pt">Select Platform</p>
+        </div>
+        <div class="img">
+            <p class="symbol">ParsePal</p>
+        </div>
+    </header>
+    <div class="cards">
+        <a href="/target?platform=twitter" class="card insta">Twitter</a>
+        <a href="/target?platform=facebook" class="card fb">Facebook</a>
+        <a href="/target?platform=instagram" class="card insta">Instagram</a>
+        <a href="/target?platform=telegram" class="card">Telegram</a>
+        <a href="/target?platform=whatsapp" class="card">WhatsApp</a>
+    </div>
+</body>
+</html>
